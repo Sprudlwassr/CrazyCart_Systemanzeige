@@ -10,8 +10,8 @@
 | Autor:        Pachler Fabio 
 | Erstellung:
 |
-| Aenderung:    7.11.2022 Mo + 4AFEL
-|               Optimieren und Rechenfehler (Datentypen) ausbessern
+| Aenderung:    
+|               
 \*-------------------------------------------------------------------------*/
 
 #include <avr/io.h>                                               
@@ -39,11 +39,11 @@ void interrupt_init()
 	DDRB &= ~(1<<PB2);
 	PORTB &= ~(1<<PB2);
 	
-	//JTD ISC2 – JTRF WDRF BORF EXTRF PORF    MCUCSR
+	//JTD ISC2 â€“ JTRF WDRF BORF EXTRF PORF    MCUCSR
 	// ?   0   ?  ?    ?    ?     ?    ?
 	MCUCSR &= ~(1<<ISC2);
 		
-	//INT1 INT0 INT2 – – – IVSEL IVCE         GICR
+	//INT1 INT0 INT2 â€“ â€“ â€“ IVSEL IVCE         GICR
 	// ?    ?    1   ? ? ?   ?    ?
 	GICR |= (1<<INT2);
 }
@@ -56,7 +56,7 @@ void timer_init()
 	//  ?      ?      ?      ?      ?     ?     0     0  
 	TCCR1A &= ~((1<<WGM10) | (1<<WGM11));
 	
-	//ICNC1 ICES1 – WGM13 WGM12 CS12 CS11 CS10                  //TCCR1B 
+	//ICNC1 ICES1 â€“ WGM13 WGM12 CS12 CS11 CS10                  //TCCR1B 
 	// ?     ?    ?  0      1    0    1    0
 	TCCR1B &= ~((1<<WGM13) | (1<<CS12));
 	TCCR1B |= (1<<WGM12) | (1<<CS11) | (1<<CS10);
