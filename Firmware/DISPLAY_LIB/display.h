@@ -46,7 +46,7 @@ void display_scroll_down (void);
 void display_pos(uint8_t posx, uint8_t posy);
 
 // Ein Zeichen an der aktuellen Cursor-Position ausgeben und
-// den Cursor um eine Stelle weiterrücken. 
+// den Cursor um eine Stelle weiterrÃ¼cken. 
 void display_char(uint8_t c);
 
 // Schreibt eine Zeichenkette an die aktuelle Position
