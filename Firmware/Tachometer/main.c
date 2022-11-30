@@ -71,7 +71,7 @@ void timer_init()      // initialisierung des timers
    // TCCR1A: COM1A1 COM1A0 COM1B1 COM1B0 FOC1A FOC1B WGM11 WGM10
    //           0      0      0      0      0     0     0     0
    TCCR1A = 0x00;
-   // TCCR1B: ICNC1 ICES1   –   WGM13 WGM12 CS12 CS11 CS10 
+   // TCCR1B: ICNC1 ICES1   â€“   WGM13 WGM12 CS12 CS11 CS10 
    //           0     0     0     0     0     0    1    1
    TCCR1B = (1<<CS10) | (1<<CS11);
    
@@ -85,11 +85,11 @@ void interrupt_init (void) // initialisierung des interrupts
    DDRB  &= ~(1<<PB2);
    PORTB |=  (1<<PB2);     // Port PB2 mit Pullup schalten (notwendig warum?)
 
-   // MCUCSR: JTD ISC2  –  JTRF WDRF BORF EXTRF PORF 
+   // MCUCSR: JTD ISC2  â€“  JTRF WDRF BORF EXTRF PORF 
    //          ?   0    ?   ?    ?    ?    ?     ?
    MCUCSR &= ~(1<<ISC2);
 
-   // GICR: INT1 INT0 INT2  –   –   –  IVSEL IVCE 
+   // GICR: INT1 INT0 INT2  â€“   â€“   â€“  IVSEL IVCE 
    //         ?    ?    1   ?   ?   ?    ?     ?
    GICR |= (1<<INT2);         // externer Interrupt 2 aktivieren
  }
