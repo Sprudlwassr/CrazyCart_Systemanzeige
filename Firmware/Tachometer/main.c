@@ -17,7 +17,7 @@
 #include <avr/io.h>                                               
 #include <avr/interrupt.h>
 #include <util/delay.h>
-#include "display.h"
+#include "./oled/display.h"
 
 /*-------------------------------------------------------------------------*\
    ^

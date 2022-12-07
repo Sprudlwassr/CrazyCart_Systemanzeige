@@ -11,8 +11,8 @@
 \*-------------------------------------------------------------------------*/
 #include <avr/io.h>
 #include <util/delay.h>
-#include "display.h"
-#include "ds18b20/ds18b20.h"
+#include "./oled/display.h"
+#include "./ds18b20/ds18b20.h"
 
 void init (void)
 {
@@ -29,7 +29,6 @@ int main (void)
    while (1)
    {
       temp = ds18b20_gettemp();
-
 
       display_clear();
       display_printf("Temperatur:%d", temp);
