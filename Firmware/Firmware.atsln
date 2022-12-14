@@ -7,6 +7,16 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Tachometer", "Tachometer\Ta
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Temp_ds18b20", "DS18B20_Temp\Temp_ds18b20.cproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Bat_measure", "Bat_measure\Bat_measure.cproj", "{0EB79BDC-7FD1-497A-9A7C-296648F1974F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lcd_lib", "lcd_lib", "{DDC1CE14-1BC9-41A9-8AA1-648C628A570F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\atmega-main\atmega-main\global\lcd\lcd.c = ..\..\..\atmega-main\atmega-main\global\lcd\lcd.c
+		..\..\..\atmega-main\atmega-main\global\lcd\lcd.h = ..\..\..\atmega-main\atmega-main\global\lcd\lcd.h
+		..\..\..\atmega-main\atmega-main\global\lcd\main.c = ..\..\..\atmega-main\atmega-main\global\lcd\main.c
+		readme.c = readme.c
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -21,6 +31,10 @@ Global
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
+		{0EB79BDC-7FD1-497A-9A7C-296648F1974F}.Debug|AVR.ActiveCfg = Debug|AVR
+		{0EB79BDC-7FD1-497A-9A7C-296648F1974F}.Debug|AVR.Build.0 = Debug|AVR
+		{0EB79BDC-7FD1-497A-9A7C-296648F1974F}.Release|AVR.ActiveCfg = Release|AVR
+		{0EB79BDC-7FD1-497A-9A7C-296648F1974F}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
