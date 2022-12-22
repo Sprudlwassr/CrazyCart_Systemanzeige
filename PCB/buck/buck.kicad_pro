@@ -48,7 +48,13 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -112,8 +118,87 @@
         "solder_mask_min_width": 0.0,
         "use_height_for_length_calcs": true
       },
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0,
+        1.5,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.4,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.4
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.6
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.6
+        },
+        {
+          "diameter": 1.5,
+          "drill": 1.1
+        },
+        {
+          "diameter": 2.0,
+          "drill": 1.6
+        },
+        {
+          "diameter": 2.5,
+          "drill": 1.9
+        },
+        {
+          "diameter": 3.0,
+          "drill": 2.2
+        },
+        {
+          "diameter": 4.0,
+          "drill": 3.2
+        },
+        {
+          "diameter": 5.0,
+          "drill": 4.0
+        },
+        {
+          "diameter": 6.0,
+          "drill": 5.0
+        },
+        {
+          "diameter": 7.0,
+          "drill": 5.8
+        },
+        {
+          "diameter": 8.0,
+          "drill": 6.2
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -410,6 +495,11 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "011ef127-1b1b-419a-9f3c-f6759ddf9a5b",
+      ""
+    ]
+  ],
   "text_variables": {}
 }
