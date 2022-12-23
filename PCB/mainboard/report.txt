@@ -1,0 +1,10 @@
+Plotted to 'M:\PCB\mainboard\mainboard-F_Cu.gtl'.
+Plotted to 'M:\PCB\mainboard\mainboard-B_Cu.gbl'.
+Plotted to 'M:\PCB\mainboard\mainboard-F_Paste.gtp'.
+Plotted to 'M:\PCB\mainboard\mainboard-B_Paste.gbp'.
+Plotted to 'M:\PCB\mainboard\mainboard-F_Silkscreen.gto'.
+Plotted to 'M:\PCB\mainboard\mainboard-B_Silkscreen.gbo'.
+Plotted to 'M:\PCB\mainboard\mainboard-F_Mask.gts'.
+Plotted to 'M:\PCB\mainboard\mainboard-B_Mask.gbs'.
+Plotted to 'M:\PCB\mainboard\mainboard-Edge_Cuts.gm1'.
+Hinweis: Fertig.
