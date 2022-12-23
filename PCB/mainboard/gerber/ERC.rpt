@@ -1,0 +1,17 @@
+ERC-Report (23.12.2022 16:28:19, UTF8-kodiert)
+
+***** Schaltplan /
+[pin_not_connected]: Pin nicht verbunden
+    ; Severity: error (excluded)
+    @(157,48 mm, 125,73 mm): Symbol J4 [Conn_01x16_Female] Pin 10 [Pin_10, Passiv, Linie]
+[pin_not_connected]: Pin nicht verbunden
+    ; Severity: error (excluded)
+    @(157,48 mm, 118,11 mm): Symbol J4 [Conn_01x16_Female] Pin 7 [Pin_7, Passiv, Linie]
+[pin_not_connected]: Pin nicht verbunden
+    ; Severity: error (excluded)
+    @(157,48 mm, 120,65 mm): Symbol J4 [Conn_01x16_Female] Pin 8 [Pin_8, Passiv, Linie]
+[pin_not_connected]: Pin nicht verbunden
+    ; Severity: error (excluded)
+    @(157,48 mm, 123,19 mm): Symbol J4 [Conn_01x16_Female] Pin 9 [Pin_9, Passiv, Linie]
+
+ ** ERC-Meldungen: 4  Fehler 4  Warnungen 0
