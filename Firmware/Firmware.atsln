@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lcd_lib", "lcd_lib", "{DDC1
 		readme.c = readme.c
 	EndProjectSection
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "_Sys_Software_v01", "Sys_Software_v01\_Sys_Software_v01.cproj", "{BCF8C7FC-ED5F-4564-BCEE-6CC508479145}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -35,6 +37,10 @@ Global
 		{0EB79BDC-7FD1-497A-9A7C-296648F1974F}.Debug|AVR.Build.0 = Debug|AVR
 		{0EB79BDC-7FD1-497A-9A7C-296648F1974F}.Release|AVR.ActiveCfg = Release|AVR
 		{0EB79BDC-7FD1-497A-9A7C-296648F1974F}.Release|AVR.Build.0 = Release|AVR
+		{BCF8C7FC-ED5F-4564-BCEE-6CC508479145}.Debug|AVR.ActiveCfg = Debug|AVR
+		{BCF8C7FC-ED5F-4564-BCEE-6CC508479145}.Debug|AVR.Build.0 = Debug|AVR
+		{BCF8C7FC-ED5F-4564-BCEE-6CC508479145}.Release|AVR.ActiveCfg = Release|AVR
+		{BCF8C7FC-ED5F-4564-BCEE-6CC508479145}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
