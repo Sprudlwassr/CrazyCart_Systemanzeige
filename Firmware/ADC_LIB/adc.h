@@ -34,7 +34,7 @@
 #ifndef ADC_DATA_SHIFT      // Data register alignment
     // 0x00 -> right
     // 0x01 -> left
-    #define ADC_DATA_SHIFT 0x01
+    #define ADC_DATA_SHIFT 0x00
 #endif
 
 #ifndef ADC_PRESCALER       // Prescaler settings
