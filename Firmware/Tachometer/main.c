@@ -1,17 +1,20 @@
 /*-------------------------------------------------------------------------*\
-| Datei:        main.c
+| File:        main.c
 | Version:      1.0
-| Projekt:      Drehzahlmessung (Hall-Sensor)
+| Project:      RPM measure (Hall-Sensor)
 |
-| Beschreibung: Mittels eines digitalen Hall Sensor werden die RPM gemessen,
-|               diese werden dann im Programm verarbeitet und an der Anzeige
-|               ausgegeben
-| Schaltung:    MEGACARD V5.5
-| Autor:        Pachler Fabio
-| Erstellung:
+| Description:  more precise version of the tachometer, using timer instead
+|               of simply counting rotations
+|               
+| Circuit:      MEGACARD V5.5
+| Author:       Pachler Fabio
+| Creation:
 |
-| Aenderung:    7.11.2022
-|               Optimieren und Rechenfehler (Datentypen) ausbessern
+| Change:       optimized and calculation errors changed | 7.11.2022
+|              
+|
+| Note:         not working properly | 4.3.2023
+|         not using this method, to complicated, simple version is enough
 \*-------------------------------------------------------------------------*/
 
 #include <avr/io.h>

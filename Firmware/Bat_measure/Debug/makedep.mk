@@ -8,9 +8,3 @@ lcd\lcd.c
 
 main.c
 
-oled\display.c
-
-oled\FontData.c
-
-oled\twi_soft.c
-

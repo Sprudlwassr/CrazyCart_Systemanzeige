@@ -1,31 +1,31 @@
 /*-------------------------------------------------------------------------*\
-| Datei:        main.c
+| File:        main.c
 | Version:      1.0
-| Projekt:      Batterie Messung
-| Beschreibung: Programm um die Spannung der Batterie zu messen
-| Schaltung:    MEGACARD V5.5
-| Autor:		Pachler Fabio
-| Erstellung:	14.12.2022
+| Projekt:      battery measure
+| Description:  test program for bat measurement
+| Circuit:      MEGACARD V5.5
+| Author:	    Pachler Fabio
+| Creation:	    14.12.2022
 |
-| Aenderung:
+| Change:
 \*-------------------------------------------------------------------------*/
+
 #include <avr/io.h>
 #include <util/delay.h>
-#include "./oled/display.h"
-#include "./adc/adc.h"
-//#include "./lcd/lcd.h"
+#include "adc/adc.h"
+#include "lcd/lcd.h"
 
 int main (void)
 {
-   display_init();
-   
+   lcd_init();
    adc_init();
+   
    adc_mode(0x00);
    adc_channel(0x00);
    uint16_t adc_value = 0;
    uint8_t bat = 0;
    
-//    Werte reichen von 670 - 860 (Durchschnitt, Werte werden noch gemessen)
+//    VALUES FROM 670 - 860 (AVERAGE VALUES, NEEDS TO BE SLIGTHLY CHANGED)
 //    Prozent    Wert
 //    100%   -	  860
 //    90%    -	  842
@@ -68,9 +68,14 @@ int main (void)
            bat = 100;
        }
 
-       display_clear();
-       display_printf_pos(0, 0, "Spannung: %u", ((adc_value * 50) / 1024));
-       display_printf_pos(0, 1, "Batterie: %u %%", bat);
+	   lcd_home();
+	   lcd_string("Spannung: ");
+	   lcd_ul2ascii(((adc_value * 50) / 1024), 10, 4);
+	   lcd_cursor(0,1);
+	   lcd_string("Ladung: ");
+	   lcd_ul2ascii(bat, 10, 3);
+	   lcd_string("%");
+
        _delay_ms(1000);
    }
 

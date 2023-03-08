@@ -168,9 +168,9 @@ void lcd_cursor(unsigned char x, unsigned char y)
     switch(y)
     {
         case 0  :   lcd_cmd(LCD_START_ADDR + x);                    break;  // Start at display line 0 and column x
-        case 1  :   lcd_cmd(LCD_START_ADDR + 0x40 + x);             break;  // Start at display line 1 and column x
-        case 2  :   lcd_cmd(LCD_START_ADDR + LCD_COLUMNS * 2 + x);  break;  // Start at display line 2 and column x
-        case 3  :   lcd_cmd(LCD_START_ADDR + 0x50 + x);             break;  // Start at display line 3 and column x
+        case 1  :   lcd_cmd(LCD_START_ADDR + 40 + x);             break;  // Start at display line 1 and column x
+        case 2  :   lcd_cmd(LCD_START_ADDR + 20 + x);  break;  // Start at display line 2 and column x
+        case 3  :   lcd_cmd(LCD_START_ADDR + 84 + x);             break;  // Start at display line 3 and column x
         default :   return; // Return if no LCD display line is set
     }
 }

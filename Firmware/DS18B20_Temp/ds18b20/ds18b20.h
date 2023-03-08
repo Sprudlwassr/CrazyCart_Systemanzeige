@@ -19,10 +19,10 @@ References:
 #include <avr/io.h>
 
 //setup connection
-#define DS18B20_PORT PORTA
-#define DS18B20_DDR DDRA
-#define DS18B20_PIN PINA
-#define DS18B20_DQ PA0
+#define DS18B20_PORT PORTD
+#define DS18B20_DDR DDRD
+#define DS18B20_PIN PIND
+#define DS18B20_DQ PD0
 
 //commands
 #define DS18B20_CMD_CONVERTTEMP 0x44
@@ -38,7 +38,7 @@ References:
 #define DS18B20_CMD_ALARMSEARCH 0xec
 
 //stop any interrupt on read
-#define DS18B20_STOPINTERRUPTONREAD 1
+#define DS18B20_STOPINTERRUPTONREAD 0
 
 //functions
 extern double ds18b20_gettemp();

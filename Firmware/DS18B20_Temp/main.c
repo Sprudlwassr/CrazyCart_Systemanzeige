@@ -1,38 +1,50 @@
 /*-------------------------------------------------------------------------*\
-| Datei:        main.c
+| File:         main.c
 | Version:      1.0
-| Projekt:      DS18b20 Temp. Sensor
-| Beschreibung: Auswerten und Ausgeben von Temperaturen mittels DS18B20
-| Schaltung:    MEGACARD V5.5
-| Autor:        Pachler Fabio 
-| Erstellung:   30.11.2022
+| Project:      DS18b20 Temp. Sensor
+| Description:  test program for the sensor DS18B20
+| Cirucit:      MEGACARD V5.5
+| Author:       Pachler Fabio 
+| Creation:     30.11.2022
 |
-| Aenderung:
+| Change:
 \*-------------------------------------------------------------------------*/
-#include <avr/io.h>
-#include <util/delay.h>
-#include "./oled/display.h"
-#include "./ds18b20/ds18b20.h"
 
-void init (void)
-{
-   
-}
+//DEFINE CLOCK FREQUENCY
+   #define F_CPU 16000000UL
+//////////
+
+//INCLUDE LIBS
+   #include <avr/io.h>
+   #include <avr/interrupt.h>
+   #include <util/delay.h>
+
+   #include "lcd/lcd.h"
+   #include "ds18b20/ds18b20.h"
+//////////
+
 
 int main (void)
 {
-   init ();        // Aufruf der Grundinitialisierungen
-   display_init(); // Initialisierung der Anzeige
-   
-   uint8_t temp = 0;
+   //INITS
+      lcd_init();       //INIT FOR LCD
+   //////////
 
+   //TEMPERATURE MEASURE INIT
+      uint8_t temp = 0;
+   //////////
+ 
    while (1)
    {
-      temp = ds18b20_gettemp();
 
-      display_clear();
-      display_printf("Temperatur:%d", temp);
-      _delay_ms(1000);
+      //OUTPUT ON DISPLAY
+         lcd_home();
+         lcd_string("Temperatur: ");
+         lcd_ul2ascii(temp, 10, 3);
+         lcd_string("C");
+      //////////
+      
+      _delay_ms(2000);
    }
 
    return 0;

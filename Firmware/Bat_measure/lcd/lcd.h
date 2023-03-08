@@ -71,11 +71,11 @@
 
 // LCD display parameters
 #ifndef LCD_COLUMNS     // LCD display columns/row (1 - 20)
-    #define LCD_COLUMNS 8
+    #define LCD_COLUMNS 20
 #endif
 
 #ifndef LCD_COLUMNS_END     // LCD character memory length
-    #define LCD_COLUMNS_END 80
+    #define LCD_COLUMNS_END 40
 #endif
 
 #ifndef LCD_START_ADDR      // Start position of the LCD RAM

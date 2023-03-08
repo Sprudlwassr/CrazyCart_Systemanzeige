@@ -6,6 +6,8 @@ copyright (c) Davide Gironi, 2012
 Released under GPLv3.
 Please refer to LICENSE file for licensing information.
 */
+#define F_CPU 16000000UL
+
 
 #include <avr/io.h>
 #include <util/delay.h>
@@ -118,7 +120,8 @@ double ds18b20_gettemp() {
 	ds18b20_writebyte(DS18B20_CMD_CONVERTTEMP); //start temperature conversion
 
 	while(!ds18b20_readbit()); //wait until conversion is complete
-
+	//_delay_ms(800);
+	
 	ds18b20_reset(); //reset
 	ds18b20_writebyte(DS18B20_CMD_SKIPROM); //skip ROM
 	ds18b20_writebyte(DS18B20_CMD_RSCRATCHPAD); //read scratchpad

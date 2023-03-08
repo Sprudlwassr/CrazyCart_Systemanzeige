@@ -95,7 +95,7 @@ Discarded input sections
                 0x00000000       0x90 lcd/lcd.o
  .debug_ranges  0x00000000       0xe0 lcd/lcd.o
  .debug_line    0x00000000      0x565 lcd/lcd.o
- .debug_str     0x00000000      0x3ff lcd/lcd.o
+ .debug_str     0x00000000      0x3e3 lcd/lcd.o
  .comment       0x00000000       0x31 lcd/lcd.o
  .debug_frame   0x00000000      0x1a8 lcd/lcd.o
  .text          0x00000000        0x0 main.o
@@ -829,17 +829,17 @@ END GROUP
  .debug_frame   0x000000c4      0x1a8 oled/display.o
  .debug_frame   0x0000026c       0x64 oled/twi_soft.o
 
-.debug_str      0x00000000      0x61d
+.debug_str      0x00000000      0x601
  *(.debug_str)
  .debug_str     0x00000000      0x1af C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega16a/avr5/crtatmega16a.o
- .debug_str     0x000001af      0x22e main.o
-                                0x262 (size before relaxing)
- .debug_str     0x000003dd      0x1f3 oled/display.o
-                                0x3ad (size before relaxing)
- .debug_str     0x000005d0       0x13 oled/FontData.o
-                                0x1ed (size before relaxing)
- .debug_str     0x000005e3       0x3a oled/twi_soft.o
-                                0x22c (size before relaxing)
+ .debug_str     0x000001af      0x212 main.o
+                                0x246 (size before relaxing)
+ .debug_str     0x000003c1      0x1f3 oled/display.o
+                                0x391 (size before relaxing)
+ .debug_str     0x000005b4       0x13 oled/FontData.o
+                                0x1d1 (size before relaxing)
+ .debug_str     0x000005c7       0x3a oled/twi_soft.o
+                                0x210 (size before relaxing)
 
 .debug_loc      0x00000000      0xb58
  *(.debug_loc)
